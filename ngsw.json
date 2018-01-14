@@ -1,0 +1,36 @@
+{
+  "configVersion": 1,
+  "index": "https://github.com/rameshangular/Ram-angular5/tree/gh-pages/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://github.com/rameshangular/Ram-angular5/tree/gh-pages/favicon.ico",
+        "https://github.com/rameshangular/Ram-angular5/tree/gh-pages/index.html",
+        "https://github.com/rameshangular/Ram-angular5/tree/gh-pages/inline.41b8a5c810e4dd038557.bundle.js",
+        "https://github.com/rameshangular/Ram-angular5/tree/gh-pages/main.0354245d5b334f319654.bundle.js",
+        "https://github.com/rameshangular/Ram-angular5/tree/gh-pages/polyfills.6233469b59ce155cca70.bundle.js",
+        "https://github.com/rameshangular/Ram-angular5/tree/gh-pages/styles.587c9803856747992f7b.bundle.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://github.com/rameshangular/Ram-angular5/tree/gh-pages/inline.41b8a5c810e4dd038557.bundle.js": "b5000652daef132122981e87cdca82d15b17032e",
+    "https://github.com/rameshangular/Ram-angular5/tree/gh-pages/main.0354245d5b334f319654.bundle.js": "e657d85c6d77a2b9fb1cfc26e5c7c01d9a806345",
+    "https://github.com/rameshangular/Ram-angular5/tree/gh-pages/polyfills.6233469b59ce155cca70.bundle.js": "e1de8395d09793fff9a8a8d1293f2713a080b4bf",
+    "https://github.com/rameshangular/Ram-angular5/tree/gh-pages/styles.587c9803856747992f7b.bundle.css": "ae7b59707c3d3afcf54ad9229156a243814eaa48",
+    "https://github.com/rameshangular/Ram-angular5/tree/gh-pages/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://github.com/rameshangular/Ram-angular5/tree/gh-pages/index.html": "1b5da53d85e7648e37ac2b5c41dff86daa6f287c"
+  }
+}
