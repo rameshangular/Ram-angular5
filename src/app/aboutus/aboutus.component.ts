@@ -5,6 +5,7 @@ import { DataService } from '../service/data.service';
   selector: 'app-aboutus',
   templateUrl: './aboutus.component.html',
   styleUrls: ['./aboutus.component.scss'],
+  providers: [DataService],
 })
 export class AboutusComponent implements OnInit {
 
