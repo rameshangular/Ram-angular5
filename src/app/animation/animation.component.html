@@ -1,0 +1,32 @@
+<h4>
+  Angular animation!
+</h4>
+/**
+ * Simeple Key frames
+ */
+<p>
+	<span>NG-Repeat Animation</span> 
+</p>
+<hr>
+<div class="container">
+	<ul class="list-unstyled custom-list" [@listAnimation]="iteam.length">
+		<li *ngFor="let item of iteam">List --> {{item}}</li>
+	</ul>
+</div>
+<hr>
+
+/**
+ * Ng repeat animation
+ */
+<p>
+	<span>Scale Animation</span> 
+	<span><code class="btn btn-info btn-sm" (click)="animatemerepeatAdd()">Animate Add</code></span>
+	<span><code class="btn btn-info btn-sm" (click)="animatemerepeatDelete()">Animate Delete</code></span>
+</p>
+<hr>
+<div class="container">
+	<ul class="list-unstyled custom-list">
+		<li [@scaleanimaterepeat]="scaleStateRpeat"  *ngFor="let item of enterleavearray">List --> {{item}}</li>
+	</ul>
+</div>
+<hr>
