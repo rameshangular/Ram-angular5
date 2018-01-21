@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -15,6 +16,8 @@ import { SiblingComponent } from './sibling/sibling.component';
 import { DataService } from './service/data.service';
 import { AnimationComponent } from './animation/animation.component';
 import { ChartComponent } from './chart/chart.component';
+import { FileuploadComponent } from './fileupload/fileupload.component';
+
 
 @NgModule({
   declarations: [
@@ -23,12 +26,14 @@ import { ChartComponent } from './chart/chart.component';
     ChatingComponent,
     SiblingComponent,
     AnimationComponent,
-    ChartComponent
+    ChartComponent,
+    FileuploadComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    HttpModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [DataService],
