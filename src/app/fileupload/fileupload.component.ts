@@ -63,6 +63,9 @@ export class FileuploadComponent implements OnInit {
             error => {
                 this.uploadStatus.emit(true);
                 this.errors.push(error.ExceptionMessage);
+            },
+            ()=>{
+            	console.log("Completed");
             }) 
 	    } 
 	}
