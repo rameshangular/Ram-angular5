@@ -27,10 +27,13 @@ export class FileuploadComponent implements OnInit {
   ngOnInit() { }
 
 	filesToUpload: Array<File> = [];
+	displaynone=false;
  	onFileChange(event){
 	   // let files = event.target.files; 
 	   this.filesToUpload = <Array<File>>event.target.files;
 	   this.saveFiles(this.filesToUpload);
+	   console.log(event.target.files[0]['name']);
+	   this.displaynone = true;
 	}
 	upload(files){
 				
@@ -59,13 +62,18 @@ export class FileuploadComponent implements OnInit {
             success => {
               this.uploadStatus.emit(true);
               console.log(success)
+            	this.displaynone = false;
             },
             error => {
                 this.uploadStatus.emit(true);
                 this.errors.push(error.ExceptionMessage);
+            	this.displaynone = false;
             },
             ()=>{
+            	this.displaynone = false;
+            	
             	console.log("Completed");
+
             }) 
 	    } 
 	}
